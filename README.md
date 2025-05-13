@@ -2,7 +2,7 @@
 
 ## 🎯 Objetivo Geral
 
-Construir uma aplicação fullstack (API + front-end) para ingestão e análise de dados fiscais a partir de arquivos `.csv`, com geração de relatórios e insights automatizados.
+Construir uma aplicação fullstack (API + front-end) para carga e análise de dados fiscais a partir de arquivos `.csv`, com geração de relatórios e insights automatizados.
 
 ---
 
