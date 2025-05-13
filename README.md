@@ -23,10 +23,6 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 #### Funcionalidades obrigatórias:
 - Upload de arquivo CSV
 - Persistência em banco relacional (SQLite, PostgreSQL)
-- Modelagem relacional com:
-  - Empresa (cnpj, razao_social)
-  - NotaFiscal (numero, data, empresa_id)
-  - ItemNota (nota_id, código, descrição, quantidade, valor, imposto)
 
 #### Regras de negócio:
 - valor_total da nota = soma de (quantidade × valor_unitario)
@@ -92,7 +88,7 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 
 ## 📦 Entrega
 
-- Faça um fork do repositório
+- Faça um fork deste repositório
   - /backend
   - /frontend
   - /dados (CSV de exemplo)
