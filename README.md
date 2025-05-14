@@ -27,7 +27,7 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 #### Regras de negócio:
 - valor_total da nota = soma de (quantidade × valor_unitario)
 - imposto_recolhido da nota = soma de imposto_item
-- diferenca = valor_total - imposto_recolhido
+
 
 ---
 
@@ -38,7 +38,7 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 - GET /alertas – notas com diferença superior a 50%
 - GET /estatisticas – KPIs gerais
 - POST /auth/login e /auth/register – autenticação com JWT
-- POST /relatorio/interpretar – (opcional) integração com LLM
+- POST /relatorio/interpretar – (extra) integração com LLM
 
 ---
 
@@ -50,11 +50,11 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 - Visualização de relatório com filtros
 - Tela de alertas
 - Tela de estatísticas
-- Botão para “Gerar Insight com IA” (opcional)
+- Botão para “Gerar Insight com IA” (extra)
 
 ---
 
-## 🤖 Integração com LLM (opcional)
+## 🤖 Integração com LLM (extra)
 
 > Criar um endpoint `/relatorio/interpretar` que use a API do OpenAI ou HuggingFace para gerar um texto como:
 
@@ -65,8 +65,8 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 ## 🛠️ Tecnologias sugeridas
 
 - Back-end: Python (FastAPI/Flask) ou C# .NET
-- Front-end: React
-- Banco de dados: PostgreSQL ou SQLite
+- Front-end: React ou VueJs
+- Banco de dados: PostgreSQL, MySql ou SQLite
 - Outros: Docker (desejável), Swagger/Postman, CI opcional
 
 ---
