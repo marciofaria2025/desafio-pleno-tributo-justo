@@ -27,6 +27,7 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 #### Regras de negócio:
 - valor_total da nota = soma de (quantidade × valor_unitario)
 - imposto_recolhido da nota = soma de imposto_item
+- diferenca = valor_total - imposto_recolhido
 
 
 ---
@@ -35,7 +36,7 @@ cnpj, razao_social, numero_nota, data_emissao, codigo_item, descricao_item, quan
 
 - POST /upload – upload e processamento do arquivo
 - GET /relatorio – total de impostos por CNPJ, média da diferença
-- GET /alertas – notas com diferença superior a 50%
+- GET /alertas – notas com diferença superior a 50% entre valor total e imposto
 - GET /estatisticas – KPIs gerais
 - POST /auth/login e /auth/register – autenticação com JWT
 - POST /relatorio/interpretar – (extra) integração com LLM
